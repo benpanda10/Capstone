@@ -82,11 +82,11 @@ p {
 }
 
 .welcome > h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .welcome > h3 {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     padding: 1em;
 }
 
@@ -118,7 +118,8 @@ p {
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    max-height: calc(75vh - 8em);
+    min-height: calc(65vh - 8em);
+    max-height: 65vh;
     margin-top: 2em;
     padding: 3em;
     background-color: var(--base-secondary);
@@ -138,7 +139,7 @@ p {
     visibility: hidden;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--text);
     width: 4em;
     height: 4em;
@@ -273,6 +274,94 @@ footer {
     padding: 20px;
 }
 
+/* Media Query */
+
+@media (max-width: 1060px) {
+    .memory-card {
+        width: 5rem;
+        height: 5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        
+    }
+
+    .welcome > h2 {
+        font-size: 1.5rem;
+    }
+    
+    .welcome > h3 {
+        font-size: 1.0rem;
+        padding: 1em;
+    }
+
+    .memory-card {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+
+    .welcome > input[type="text"] {
+        height: 2em;
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    #history-search {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #history-container {
+        width: 70%;
+    }
+
+    #history-cards > * {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.6rem;
+    }
+
+    .memory-card {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+
+    .welcome > input[type="text"] {
+        font-size: 1rem;
+        width: 90%;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome > h2 {
+        font-size: 1.0rem;
+    }
+    
+    .welcome > h3 {
+        font-size: 0.6rem;
+        padding: 1em;
+    }
+
+    .memory-card {
+        width: 40px;
+        height: 40px;
+        font-size: 0.6rem;
+    }   
+}
 
 
 
